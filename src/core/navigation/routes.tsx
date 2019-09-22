@@ -45,8 +45,8 @@ const ThemesNavigator: NavigationContainer = createStackNavigator(
 
 const LayoutsNavigator: NavigationContainer = createStackNavigator(
   {
-    ['Layouts']: LayoutsContainer,
-    // ['Layouts']: ConversationsListContainer,
+    // ['Layouts']: LayoutsContainer,
+    ['Layouts']: ConversationsListContainer,
     ['Messaging']: MessagingContainer,
   },
   {
