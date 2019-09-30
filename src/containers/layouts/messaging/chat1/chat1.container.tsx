@@ -18,6 +18,7 @@ import {
   profile2,
 } from '@src/core/data/profile';
 import { Chat1 } from './chat1.component';
+import SendBirdAdapter from '@src/core/dataService/sendBirdAdapter.js';
 
 interface State {
   newMessageText: string;
@@ -25,6 +26,36 @@ interface State {
 }
 
 export class Chat1Container extends React.Component<NavigationScreenProps, State> {
+  private appId = '9DA1B1F4-0BE6-4DA8-82C5-2E81DAB56F23';
+  private channelUrl = 'sendbird_open_channel_1_5b0336cc55abf6d3464e1d2a263a8e343d3b2b42'; 
+
+  private adapter = null;
+
+  private enterChannel(channelUrl, callback?) {
+    let _this = this;
+    _this.adapter.enterChannel(channelUrl, () => {
+      _this.adapter.getMessageList((messageList) => {
+        console.log(messageList);
+
+        _this.adapter.createHandler((channel, message) => {
+          if (channel.url === channelUrl) {
+          }
+        });
+      }, true);
+
+      if(callback) {
+        callback();
+      }
+    });
+  }
+
+  private connectSendBird(){
+    this.adapter.connect('userIdAndy', 'nickNameAndy',
+    () => {
+      this.adapter.connectionHandler(this.channelUrl, this);
+      this.enterChannel(this.channelUrl);
+    });
+  }
 
   public state: State = {
     newMessageText: '',
@@ -52,6 +83,8 @@ export class Chat1Container extends React.Component<NavigationScreenProps, State
   };
 
   public componentWillMount(): void {
+    this.adapter = new SendBirdAdapter(this.appId);
+    this.connectSendBird();
     this.props.navigation.setParams({
       interlocutor: this.state.conversation.interlocutor,
       lastSeen: this.state.conversation.lastSeen,

@@ -59,6 +59,7 @@ class Chat1Component extends React.Component<Chat1ComponentProps> {
   };
 
   private onNewMessageChange = (text: string): void => {
+    throw new Error('andy exception');
     this.props.onNewMessageChange(text);
   };
 

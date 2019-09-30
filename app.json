@@ -1,21 +1,19 @@
 {
   "expo": {
-    "name": "Kitten Tricks",
+    "name": "ReactNativeMessager",
     "icon": "./src/assets/icons/icon.png",
-    "version": "2.0.1",
-    "slug": "kittenTricks",
+    "version": "0.1.0",
+    "slug": "ReactNativeMessager",
     "sdkVersion": "33.0.0",
     "privacy": "public",
     "orientation": "portrait",
-    "githubUrl": "https://github.com/akveo/kittenTricks",
+    "githubUrl": "https://github.com/andyc365/ReactNativeMessager",
     "ios": {
-      "bundleIdentifier": "com.akveo.kittentricks",
-      "appStoreUrl": "https://itunes.apple.com/us/app/kitten-tricks/id1246143230"
+      "bundleIdentifier": "com.andyc.messager"
     },
     "android": {
-      "package": "com.akveo.kittenTricks",
-      "versionCode": 17,
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.akveo.kittenTricks"
+      "package": "com.andyc.messager",
+      "versionCode": 17
     },
     "androidStatusBar": {
       "backgroundColor": "#FFFFFF"
