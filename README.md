@@ -3,10 +3,13 @@
 A React Native based cross-platform messenger(Messager) application.
 The themes can be changed in the runtime, without any need of reloading the application.
 
+This project serves as my React Native learning for the moment.
+
 ![Preview](./src/assets/images/source/image-layout-conversation-list.jpg) ![Preview](./src/assets/images/source/image-layout-chat-3.jpg)
 
 ## Key features:
  
+- Integrate with UIKitten.
 - Built with **TypeScript**.
 - **Dark and Light themes** could be used simultaneously and changed on the fly. 
 - **Huge variety of customizable Themes**.
