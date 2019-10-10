@@ -12,11 +12,7 @@ The themes can be changed in the runtime, without any need of reloading the appl
  
 - Built with **TypeScript**.
 - Integrate with **UIKitten**.
-<<<<<<< HEAD
 - Integrate **SendBird** as the back-end messaging service, you can change it with your own/favoured service.
-=======
-- Integrate SendBird as the back-end messaging service, you can change it with your own/favoured service.
->>>>>>> c68b37c4d760dcea312cac069daa75bca36c2118
 - **Dark and Light themes** could be used simultaneously and changed on the fly. 
 - **Huge variety of customizable Themes**.
 - **Integration with Eva Design System** allows the app to stay in brand style and get clean, consistency UI.
