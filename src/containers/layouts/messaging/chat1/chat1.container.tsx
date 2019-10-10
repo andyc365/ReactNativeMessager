@@ -33,11 +33,11 @@ export class Chat1Container extends React.Component<NavigationScreenProps, State
 
   private enterChannel(channelUrl, callback?) {
     let _this = this;
-    _this.adapter.enterChannel(channelUrl, () => {
-      _this.adapter.getMessageList((messageList) => {
+    this.adapter.enterChannel(channelUrl, () => {
+      this.adapter.getMessageList((messageList) => {
         console.log(messageList);
 
-        _this.adapter.createHandler((channel, message) => {
+        this.adapter.createHandler((channel, message) => {
           if (channel.url === channelUrl) {
           }
         });
