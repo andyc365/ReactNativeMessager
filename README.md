@@ -1,12 +1,7 @@
 # React Native Messager
 
-This project serves as my React Native learning for the moment.
-
 A React Native based cross-platform messenger(Messager) application.
 The themes can be changed in the runtime, without any need of reloading the application.
-
-
-![Preview](./src/assets/images/source/image-layout-conversation-list.jpg) ![Preview](./src/assets/images/source/image-layout-chat-1.jpg)
 
 ## Key features:
  
