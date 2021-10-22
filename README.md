@@ -2,6 +2,7 @@
 
 A React Native based cross-platform messenger(Messager) application.
 The themes can be changed in the runtime, without any need of reloading the application.
+Most code is a simple copy-paste from the [UI Kitten](https://akveo.github.io/react-native-ui-kitten/) project. : ) 
 
 ## Key features:
  
